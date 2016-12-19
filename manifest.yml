@@ -1,0 +1,16 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: meutestephp
+  host: meutestephp
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  env:
+    DB_HOSTNAME: aws-us-east-1-portal.5.dblayer.com
+    DB_NAME: compose
+    DB_PASSWORD: DSAWXMTLKKPBZXYH
+    DB_PORT: '16325'
+    DB_USERNAME: admin
